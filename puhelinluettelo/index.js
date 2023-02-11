@@ -96,7 +96,7 @@ app.post('/api/persons', (req, res) => {
       error: 'name already exists' 
     })
   }
-  //add a new person
+  //person added 
   persons = persons.concat(person)
   res.json(person)
 })
