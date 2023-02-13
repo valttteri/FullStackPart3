@@ -3,3 +3,5 @@ Dockerfile
 .dockerignore
 node_modules
 .git
+.env
+fly secrets set MONGODB_URI=mongodb+srv://valtteriahola:${mangophone}@cluster0.fr4aq6v.mongodb.net/phonebookApp?retryWrites=true&w=majority
