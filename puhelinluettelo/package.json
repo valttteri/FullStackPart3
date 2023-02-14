@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../../FullStack/osa2/puhelinluettelo && npm run build && cp -r build ../../../FullStackPart3/puhelinluettelo",
     "deploy": "fly deploy",
     "deploy:full": "npm run build:ui && npm run deploy",
-    "logs:prod": "fly logs"
+    "logs:prod": "fly logs",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.34.0",
     "nodemon": "^2.0.20"
   }
 }
